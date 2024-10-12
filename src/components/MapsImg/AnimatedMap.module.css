@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  /* background-color: #b9b9b9; */
+}
+
+.animatedPath {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawPath 1s forwards ease-in-out infinite alternate;
+}
+
+.animatedPath2 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawPath 2s forwards ease-in-out infinite alternate;
+}
+
+.animatedPath3 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawPath 3s forwards ease-in-out infinite alternate;
+}
+
+.animatedNode {
+  opacity: 0;
+  animation: fadeIn 2s forwards ease-in-out infinite alternate;
+}
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.mySvg {
+  width: 100%;
+  height: auto;
+}

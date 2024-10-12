@@ -1,0 +1,32 @@
+{
+  "name": "indihome-area",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "postbuild": "next-sitemap",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "^14.2.5",
+    "next": "14.2.5",
+    "next-sitemap": "^4.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.2.1",
+    "react-lazy-load-image-component": "^1.6.2",
+    "react-slick": "^0.30.2",
+    "react-spinners": "^0.14.1",
+    "sharp": "^0.33.4",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}
