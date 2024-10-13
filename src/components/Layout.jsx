@@ -1,13 +1,14 @@
 // components/Layout.jsx
 import Navbar from "./Navbar/Navbar";
-import BannerSlider from "./BannerSlider/BannerSlider";
 import Footer from "./Footer";
-
+import ImageCard from "./ImageCard/imageCard";
+import Banner from "./Banner"
 const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <BannerSlider />
+      <Banner />
+      <ImageCard />
       <main className="my-10">{children}</main>
       <Footer/>
     </>

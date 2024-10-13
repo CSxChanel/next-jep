@@ -173,7 +173,7 @@ export default function Home() {
                     {JSON.stringify(structuredData)}
                 </script>
             </Head>
-            <Banner title={area.title} description={area.description} />
+    
             <InternetPromo title={area.title} path={area.path} />
             <InternetJitu />
             <InternetTv />
