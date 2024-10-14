@@ -9,8 +9,9 @@ const poppins = Poppins({
 });
 
 function MyApp({ Component, pageProps }) {
+  const { title } = pageProps;
   return (
-    <Layout className={poppins.className}>
+    <Layout title={title} className={poppins.className}>
       <Component {...pageProps} />
     </Layout>
   );

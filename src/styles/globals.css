@@ -75,3 +75,13 @@
   height: 20px !important;
   display: none !important;
 }
+
+/* Untuk browser WebKit (Chrome, Safari, dll) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Untuk Firefox */
+.no-scrollbar {
+  scrollbar-width: none;
+}

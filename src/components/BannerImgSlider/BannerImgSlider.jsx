@@ -1,7 +1,7 @@
 // components/BannerImgSlider.jsx
-import { useState } from "react";
 import ImgSliderCard from "./ImgSliderCard";
 import Image from "next/image";
+import React, { useRef, useState } from "react";
 
 const BannerImgSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -44,6 +44,29 @@ const BannerImgSlider = () => {
     },
   ];
 
+  const containerRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.pageX - containerRef.current.offsetLeft);
+    setScrollLeft(containerRef.current.scrollLeft);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - containerRef.current.offsetLeft;
+    const walk = (x - startX) * 2;
+    containerRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  const handleMouseUpOrLeave = () => {
+    setIsDragging(false);
+  };
+
   return (
     <div className="relative w-full bg-slate-100 overflow-hidden mb-20 pb-5">
       <Image
@@ -56,7 +79,15 @@ const BannerImgSlider = () => {
       />
       <div className="relative z-10 flex justify-end gap-x-5 items-center">
         <h1 className="p-4 text-xl">{images[currentIndex].text}</h1>
-        <div className="flex space-x-4 overflow-x-scroll px-5 py-2 bg-white bg-opacity-70 rounded-l-2xl shadow-md max-w-[60%]">
+        <div
+          className="flex space-x-4 overflow-x-auto no-scrollbar px-5 py-2 bg-white bg-opacity-70 rounded-l-2xl shadow-md max-w-[60%]"
+          ref={containerRef}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUpOrLeave}
+          onMouseLeave={handleMouseUpOrLeave}
+          style={{ cursor: isDragging ? "grabbing" : "grab" }}
+        >
           {images.map((image, index) => (
             <div
               key={index}

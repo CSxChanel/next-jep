@@ -9,7 +9,7 @@ const ImgSliderCard = ({ image }) => {
         alt={image.alt}
         effect="blur"
         src={image.src}
-        className="w-[220px] h-full md:w-[250px] lg:w-[300px] object-center object-cover rounded-2xl border-2 cursor-pointer shadow-lg"
+        className="w-[220px] h-full md:w-[250px] lg:w-[300px] object-center object-cover rounded-2xl border-2 shadow-lg"
       />
     </div>
   );

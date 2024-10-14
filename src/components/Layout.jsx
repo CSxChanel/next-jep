@@ -3,11 +3,12 @@ import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer";
 import ImageCard from "./ImageCard/imageCard";
 import Banner from "./Banner"
-const Layout = ({ children }) => {
+import AreaCard from "./indihomeArea/areaCard";
+const Layout = ({ title, children }) => {
   return (
     <>
       <Navbar />
-      <Banner />
+      <Banner title={title} />
       <ImageCard />
       <main className="my-10">{children}</main>
       <Footer/>

@@ -35,7 +35,7 @@ const BoxPromo = ({ type, title, price, mbps, benevit, benevit2, syarat }) => {
   };
 
   return (
-    <div className="my-8 sm:my-5 shadow-lg shadow-slate-500 w-full mx-auto bg-slate-100 rounded-xl">
+    <div className="my-8 sm:my-5 shadow-lg shadow-slate-500 min-w-[280px] md:w-full bg-slate-100 rounded-xl">
       <h2 className="mx-auto w-[180px] py-1 text-center text-slate-100 font-bold bg-gradient-to-r from-rose-900 to-rose-600 rounded-bl-xl rounded-tr-xl">
         Paling Murah
       </h2>
@@ -46,7 +46,7 @@ const BoxPromo = ({ type, title, price, mbps, benevit, benevit2, syarat }) => {
         </div>
         <div>
           <h3 className="font-semibold text-xl">{title}</h3>
-          <p className="text-xl">{type}</p>
+          <p className="text-md md:text-xl">{type}</p>
         </div>
       </div>
       <div className="mx-7 text-center">
@@ -55,13 +55,13 @@ const BoxPromo = ({ type, title, price, mbps, benevit, benevit2, syarat }) => {
           <span className="text-3xl font-bold">{price.toLocaleString()}</span>
           /bulan
         </h3>
-        <div className="bg-rose-700 w-full rounded-xl shadow shadow-slate-500 text-slate-100 font-bold hover:scale-110 mt-5">
+        <div className="bg-rose-700 w-full rounded-xl shadow shadow-slate-500 text-slate-100 font-bold hover:scale-110 mt-5 py-1">
           <button onClick={handleOpen} typeof="button">
             Berlangganan Sekarang
           </button>
         </div>
       </div>
-      <div className="flex justify-between mx-3 border-t-2 border-rose-700 my-7 py-2">
+      <div className="flex justify-between mx-3 mt-5 border-t-2 border-rose-700 py-2">
         <button
           onClick={handleOpenBenevitModal}
           className="text-rose-700 text-sm cursor-pointer font-medium"

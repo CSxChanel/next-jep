@@ -17,7 +17,7 @@ const SemuaHarga = () => {
   }, []);
 
   return (
-    <div className="container my-5">
+    <div className="my-5 container">
       <div className="mt-16 w-full mx-auto text-center">
         <h1 className="font-bold text-2xl sm:text-3xl">
           Pilihan Paket IndiHome
@@ -26,7 +26,14 @@ const SemuaHarga = () => {
           <h1 className="font-bold mt-3 sm:mt-5 sm:text-3xl text-2xl text-rose-600">
             indiHome-Area
           </h1>
-          <p className="text-md sm:text-xl font-semibold p-3 sm:px-8">IndiHome menghadirkan berbagai paket promo menarik untuk memenuhi kebutuhan internet Anda. Paket-paket ini dirancang untuk memberikan pengalaman internet yang cepat, stabil, dan terjangkau. Namun, perlu diingat bahwa tidak semua paket promo tersedia di setiap wilayah. Oleh karena itu, penting untuk memeriksa ketersediaan paket di daerah Anda.</p>
+          <p className="text-md sm:text-xl font-semibold p-3 sm:px-8">
+            IndiHome menghadirkan berbagai paket promo menarik untuk memenuhi
+            kebutuhan internet Anda. Paket-paket ini dirancang untuk memberikan
+            pengalaman internet yang cepat, stabil, dan terjangkau. Namun, perlu
+            diingat bahwa tidak semua paket promo tersedia di setiap wilayah.
+            Oleh karena itu, penting untuk memeriksa ketersediaan paket di
+            daerah Anda.
+          </p>
         </div>
       </div>
       {loading ? (
@@ -34,7 +41,7 @@ const SemuaHarga = () => {
           <PulseLoader color="#e11d48" size={15} />
         </div>
       ) : (
-        <div className="sm:grid sm:grid-cols-2 gap-3">
+        <div className="grig md:grid-cols-3 md:gap-3 md:space-x-0">
           {allPackages.map((pkg) => (
             <BoxList
               key={pkg.id}
