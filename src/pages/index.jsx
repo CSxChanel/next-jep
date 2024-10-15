@@ -33,9 +33,9 @@ export const getStaticProps = () => {
 export default function Home() {
   const area = {
     path: "indihome-area",
-    title: "Indihome Area",
+    title: "IndiHome by-Telkomsel",
     pageTitle:
-      "Indihome-Area | Provider internet Biaya Pemasangan gratis untuk semua Area",
+      "Indihome by-Telkomsel | Provider internet Biaya Pemasangan gratis untuk semua Area",
     description:
       "Bebas akses internet stabil, telepon rumah jernih dan tayangan Tv interaktif terpopuler dengan indiHome. Miliki layanan internet terbaik di rumah sekarang juga.",
     conten:
@@ -61,7 +61,7 @@ export default function Home() {
     },
   ];
 
-  const pageUrl = "https://indihome-area.com";
+  const pageUrl = "https://indihome-bytelkomsel.com";
   const ogImage = "https://indihome-area.com/paketMovie.png";
   //metadat schema produk
   const structuredData = {
