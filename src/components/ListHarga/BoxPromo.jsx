@@ -35,7 +35,7 @@ const BoxPromo = ({ type, title, price, mbps, benevit, benevit2, syarat }) => {
   };
 
   return (
-    <div className="my-8 sm:my-5 shadow-lg shadow-slate-500 min-w-[280px] md:w-full bg-slate-100 rounded-xl">
+    <div className="my-8 sm:my-5 shadow-md shadow-slate-500 min-w-[280px] md:w-full bg-slate-100 rounded-xl">
       <h2 className="mx-auto w-[180px] py-1 text-center text-slate-100 font-bold bg-gradient-to-r from-rose-900 to-rose-600 rounded-bl-xl rounded-tr-xl">
         Paling Murah
       </h2>

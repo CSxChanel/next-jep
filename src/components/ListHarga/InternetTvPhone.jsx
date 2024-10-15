@@ -1,5 +1,5 @@
 //src/components/ListHarga/InternetTvPhone
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { PulseLoader } from "react-spinners";
 import BoxList from "./BoxList.jsx";
 import { InternetTvPhone } from "@/services/Datas.js";
@@ -15,6 +15,30 @@ const InetTvPhone = () => {
 
     return () => clearTimeout(timer);
   }, []);
+
+  const containerRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.pageX - containerRef.current.offsetLeft);
+    setScrollLeft(containerRef.current.scrollLeft);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - containerRef.current.offsetLeft;
+    const walk = (x - startX) * 5;
+    containerRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  const handleMouseUpOrLeave = () => {
+    setIsDragging(false);
+  };
+
   return (
     <div className="my-5 mr-5">
       <div className="mt-16 w-full mx-auto text-center">
@@ -29,7 +53,15 @@ const InetTvPhone = () => {
           <PulseLoader color="#e11d48" size={15} />
         </div>
       ) : (
-        <div className="flex space-x-6 ml-5 overflow-x-auto no-scrollbar scroll-smooth cursor-pointer md:grig md:grid-cols-3 md:gap-3 md:space-x-0">
+        <div
+          className="flex space-x-6 ml-5 overflow-x-auto no-scrollbar scroll-smooth cursor-pointer md:grig md:grid-cols-3 md:gap-3 md:space-x-0"
+          ref={containerRef}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUpOrLeave}
+          onMouseLeave={handleMouseUpOrLeave}
+          style={{ cursor: isDragging ? "grabbing" : "grab" }}
+        >
           {inetTvPhone.map((pkg) => (
             <BoxList
               key={pkg.id}
