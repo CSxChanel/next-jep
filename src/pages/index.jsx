@@ -1,7 +1,6 @@
 import Head from "next/head";
 
 //components
-import Banner from "@/components/Banner";
 import InternetJitu from "@/components/ListHarga/InternetOnly";
 import InetTvPhone from "@/components/ListHarga/InternetTvPhone";
 import MapImage from "@/components/MapsImg/MapImage";
@@ -12,17 +11,11 @@ import CardContainer from "@/components/CardContainer";
 import H2Title from "@/components/h2Title";
 import { useEffect, useState } from "react";
 import { PulseLoader } from "react-spinners";
+import LanggananSekarang from "@/components/LanggananSekarang";
 
 export const getStaticProps = () => {
   const area = {
-    path: "indihome-area",
-    title: "Indihome Area",
-    pageTitle:
-      "Indihome-Area | Provider internet Biaya Pemasangan gratis untuk semua Area",
-    description:
-      "Bebas akses internet stabil, telepon rumah jernih dan tayangan Tv interaktif terpopuler dengan indiHome. Miliki layanan internet terbaik di rumah sekarang juga.",
-    conten:
-      "Solusi Internet Cepat, Berkelas, dan Cerdas untuk Aktifitas Tanpa Batas",
+    title: "Indihome by-Telkomsel",
   };
   return {
     props: {
@@ -32,7 +25,7 @@ export const getStaticProps = () => {
 };
 export default function Home() {
   const area = {
-    path: "indihome-area",
+    path: "indihome-by-telkomsel",
     title: "IndiHome by-Telkomsel",
     pageTitle:
       "Indihome by-Telkomsel | Provider internet Biaya Pemasangan gratis untuk semua Area",
@@ -236,6 +229,7 @@ export default function Home() {
           <InternetJitu />
           <InternetTv />
           <InetTvPhone />
+          <LanggananSekarang />
           <MapImage />
           <BannerImgSlider />
         </>
