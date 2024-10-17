@@ -1,6 +1,8 @@
 import AreaContainer from "@/components/indihomeArea/areaContainer";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { PulseLoader } from "react-spinners";
+import { useEffect, useState } from "react";
 
 const IndihomeAreaList = () => {
   const router = useRouter();
@@ -131,6 +133,15 @@ const IndihomeAreaList = () => {
   const ogImage = "https://indihome-bytelkomsel.com/paketMovie.png";
 
   //metadat schema produk
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
@@ -182,7 +193,15 @@ const IndihomeAreaList = () => {
         />
         {/* Structured Data */}
       </Head>
-      <AreaContainer indihomeArea={indihomeArea} />;
+      {loading ? (
+        <div className="flex justify-center items-center h-64">
+          <PulseLoader color="#e11d48" size={15} />
+        </div>
+      ) : (
+        <>
+          <AreaContainer indihomeArea={indihomeArea} />;
+        </>
+      )}
     </>
   );
 };
