@@ -29,20 +29,20 @@ export default function Home() {
     path: "indihome-by-telkomsel",
     title: "IndiHome by-Telkomsel",
     pageTitle:
-      "Indihome by-Telkomsel | Provider internet Biaya Pemasangan gratis untuk semua Area",
+      "Indihome by-Telkomsel | Provider internet Biaya Pemasangan gratis untuk semua Area indihome",
     description:
-      "Bebas akses internet stabil, telepon rumah jernih dan tayangan Tv interaktif terpopuler dengan indiHome. Miliki layanan internet terbaik di rumah sekarang juga.",
+      "indihome by-Telkomsel menawarkan layanan internet Bebas akses internet stabil, telepon rumah jernih dan tayangan Tv interaktif terpopuler dengan indiHome. Miliki layanan internet terbaik di rumah sekarang juga.",
     conten:
       "Solusi Internet Cepat, Berkelas, dan Cerdas untuk Aktifitas Tanpa Batas",
   };
 
   const pageUrl = "https://indihome-bytelkomsel.com";
-  const ogImage = "https://indihome-area.com/paketMovie.png";
+  const ogImage = "https://indihome-bytelkomsel.com/paketMovie.png";
   //metadat schema produk
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "Indihome Area | Produk indihome",
+    name: "Indihome by-Telkomsel | Produk indihome",
     image: ogImage,
     description:
       "Promo internet indihome Pendaftaran biaya Gratis,Pemasangan indihome mencakup semua Area.",

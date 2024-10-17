@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import "@/styles/globals.css"; // Pastikan untuk mengimpor CSS global
+import "@/styles/globals.css";
 import { Poppins } from "@next/font/google";
 
 const poppins = Poppins({

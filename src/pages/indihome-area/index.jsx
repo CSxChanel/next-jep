@@ -127,59 +127,64 @@ const IndihomeAreaList = () => {
     },
   ];
 
-  const pageUrl = "https://indihome-area.com/indihome-area";
-  const ogImage = "https://indihome-area.com/paketMovie.png";
+  const pageUrl = "https://indihome-bytelkomsel.com/indihome-by-telkomsel";
+  const ogImage = "https://indihome-bytelkomsel.com/paketMovie.png";
 
+  //metadat schema produk
 
-
- //metadat schema produk
-
-
- 
   return (
     <>
-    <Head>
-                <title>Indihome Area | Provider internet mencakup semua area indihome biaya registrasi Gratis.</title>
-                <meta name="description" content="Indihome Area suda tersedia di seluruh penjuru pelosok, lebih dari 8++juta pelanggan Aktif. menghadirkan layanan internet fiber Optik." />
-                <link rel="canonical" href={pageUrl} />
-                <meta property="og:image" content={ogImage} />
+      <Head>
+        <title>
+          Indihome Area | Provider internet mencakup semua area indihome biaya
+          registrasi Gratis.
+        </title>
+        <meta
+          name="description"
+          content="Indihome Area suda tersedia di seluruh penjuru pelosok, lebih dari 8++juta pelanggan Aktif. menghadirkan layanan internet fiber Optik."
+        />
+        <link rel="canonical" href={pageUrl} />
+        <meta property="og:image" content={ogImage} />
 
-                {/* Open Graph Tags */}
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="Indihome Area | Provider internet mencakup semua area indihome biaya registrasi Gratis." />
-                <meta
-                    property="og:description"
-                    content="Indihome Area suda tersedia di seluruh penjuru pelosok, lebih dari 8++juta pelanggan Aktif. menghadirkan layanan internet fiber Optik."
-                />
-                <meta property="og:url" content={pageUrl} />
-                <meta property="og:image" content={ogImage} />
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Indihome Area | Provider internet mencakup semua area indihome biaya registrasi Gratis."
+        />
+        <meta
+          property="og:description"
+          content="Indihome Area suda tersedia di seluruh penjuru pelosok, lebih dari 8++juta pelanggan Aktif. menghadirkan layanan internet fiber Optik."
+        />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:image" content={ogImage} />
 
-                {/* Twitter Cards */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Indihome Area | Provider internet mencakup semua area indihome biaya registrasi Gratis." />
-                <meta
-                    name="twitter:description"
-                    content="Indihome Area suda tersedia di seluruh penjuru pelosok, lebih dari 8++juta pelanggan Aktif. menghadirkan layanan internet fiber Optik."
-                />
-                <meta name="twitter:image" content={ogImage} />
-                <meta
-                    name="keywords"
-                    content="indihome, internet, pendaftaran, indihome-cikupa, indihome-balaraja, indihome-tigaraksa"
-                />
-                {/* Robots meta tags */}
-                <meta name="robots" content="index, follow" />
-                <meta
-                    name="googlebot"
-                    content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
-                />
-                {/* Structured Data */}
-           
-            </Head>
-    
-            <AreaContainer indihomeArea={indihomeArea} />;
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Indihome Area | Provider internet mencakup semua area indihome biaya registrasi Gratis."
+        />
+        <meta
+          name="twitter:description"
+          content="Indihome Area suda tersedia di seluruh penjuru pelosok, lebih dari 8++juta pelanggan Aktif. menghadirkan layanan internet fiber Optik."
+        />
+        <meta name="twitter:image" content={ogImage} />
+        <meta
+          name="keywords"
+          content="indihome, internet, pendaftaran, indihome-cikupa, indihome-balaraja, indihome-tigaraksa"
+        />
+        {/* Robots meta tags */}
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="googlebot"
+          content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        />
+        {/* Structured Data */}
+      </Head>
+      <AreaContainer indihomeArea={indihomeArea} />;
     </>
-  )
-  
+  );
 };
 
 export default IndihomeAreaList;
