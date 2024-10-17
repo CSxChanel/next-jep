@@ -25,10 +25,10 @@ const LanggananSekarang = ({ title }) => {
     <>
       <div className="container bg-slate-200 h-[500px] my-10">
         <div className="bg-gradient-to-r from-red-700 to-rose-500 w-full mx-auto sm:grid sm:grid-cols-2 sm:gap-x-12 sm:items-center sm:justify-items-center py-4 px-5 text-slate-100">
-          <h4 className="text-2xl sm:text-3xl font-bold">
+          <h5 className="text-2xl sm:text-3xl font-bold">
             Yuk, Mulai Langganan <br />
             IndiHome Sekarang!
-          </h4>
+          </h5>
 
           <button
             onClick={handelSubmit}

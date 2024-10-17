@@ -31,9 +31,9 @@ const BantuanIndihome = ({ title }) => {
               height={200}
               className="absolute -top-32 right-0"
             />
-            <h1 className="text-slate-100 text-2xl sm:text-3xl font-bold mb-2">
+            <h6 className="text-slate-100 text-2xl sm:text-3xl font-bold mb-2">
               Bantuan {title}
-            </h1>
+            </h6>
             <p className="text-slate-300 sm:text-xl text-base">
               Kami menyediakan bantuan langsung melalui WhatsApp. Kami akan
               membalas pesan Anda melalui WhatsApp 24/7. Tetap berlangganan dan
