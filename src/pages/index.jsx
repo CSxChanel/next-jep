@@ -8,10 +8,11 @@ import InternetPromo from "@/components/ListHarga/InternetPromo";
 import InternetTv from "@/components/ListHarga/InternetTv";
 import BannerImgSlider from "@/components/BannerImgSlider/BannerImgSlider";
 import CardContainer from "@/components/CardContainer";
-import H2Title from "@/components/h2Title";
+import H3Title from "@/components/h3Title";
 import { useEffect, useState } from "react";
 import { PulseLoader } from "react-spinners";
 import LanggananSekarang from "@/components/LanggananSekarang";
+import BantuanIndihome from "@/components/BantuanIndihome";
 
 export const getStaticProps = () => {
   const area = {
@@ -34,25 +35,6 @@ export default function Home() {
     conten:
       "Solusi Internet Cepat, Berkelas, dan Cerdas untuk Aktifitas Tanpa Batas",
   };
-  const images = [
-    {
-      src: "/media/layanan-internet.png",
-      alt: "Layanan Internet",
-      description: "Akses internet broadband cepat hingga 300Mbps.",
-    },
-    {
-      src: "/media/layanan-tv.png",
-      alt: "Layanan TV",
-      description:
-        "Tayangan TV berkualitas hingga 4K Full HD untuk kualitas terbaik.",
-    },
-    {
-      src: "/media/layanan-telepon.png",
-      alt: "Layanan Telepon",
-      description:
-        "Akses layanan telepon rumah hingga 1000an nomor aktif di seluruh wilayah Indonesia.",
-    },
-  ];
 
   const pageUrl = "https://indihome-bytelkomsel.com";
   const ogImage = "https://indihome-area.com/paketMovie.png";
@@ -223,15 +205,16 @@ export default function Home() {
         </div>
       ) : (
         <>
-          <CardContainer images={images} />
-          <H2Title title={area.title} path={area.path} />
+          <CardContainer />
+          <H3Title title={area.title} path={area.path} />
           <InternetPromo />
           <InternetJitu />
           <InternetTv />
           <InetTvPhone />
-          <LanggananSekarang />
-          <MapImage />
+          <LanggananSekarang title={area.title} />
+          <MapImage title={area.title} />
           <BannerImgSlider />
+          <BantuanIndihome title={area.title} />
         </>
       )}
     </>

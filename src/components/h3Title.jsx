@@ -1,10 +1,10 @@
-const H2Title = ({ title, path }) => {
+const H3Title = ({ title, path }) => {
   return (
     <>
       <div className="container text-center my-10">
-        <h2 className="font-bold text-2xl sm:text-3xl">
+        <h3 className="font-bold text-2xl sm:text-3xl">
           Pilihan Paket IndiHome
-        </h2>
+        </h3>
         <p className="font-semibold text-md sm:text-xl p-3 sm:px-8">
           {title} menawarkan berbagai paket promo menarik yang dirancang untuk
           memenuhi kebutuhan internet Anda dengan harga yang lebih terjangkau.
@@ -17,4 +17,4 @@ const H2Title = ({ title, path }) => {
   );
 };
 
-export default H2Title;
+export default H3Title;

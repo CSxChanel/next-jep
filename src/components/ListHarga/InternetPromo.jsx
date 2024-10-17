@@ -48,9 +48,9 @@ const InternetPromo = ({ onClick, buttonLabel }) => {
           </div>
         ) : (
           <>
-            <h3 className="font-bold text-2xl sm:text-3xl sm:mt-5 mt-3 text-rose-600">
+            <h4 className="font-bold text-2xl sm:text-3xl sm:mt-5 mt-3 text-rose-600">
               Paket 1P (Internet Only)
-            </h3>
+            </h4>
           </>
         )}
       </div>

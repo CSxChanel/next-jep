@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import CardImage from "./CardImage";
 
-const CardContainer = ({ images }) => {
+const CardContainer = () => {
   const containerRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -24,6 +24,26 @@ const CardContainer = ({ images }) => {
   const handleMouseUpOrLeave = () => {
     setIsDragging(false);
   };
+
+  const images = [
+    {
+      src: "/media/layanan-internet.png",
+      alt: "Layanan Internet",
+      description: "Akses internet broadband cepat hingga 300Mbps.",
+    },
+    {
+      src: "/media/layanan-tv.png",
+      alt: "Layanan TV",
+      description:
+        "Tayangan TV berkualitas hingga 4K Full HD untuk kualitas terbaik.",
+    },
+    {
+      src: "/media/layanan-telepon.png",
+      alt: "Layanan Telepon",
+      description:
+        "Akses layanan telepon rumah hingga 1000an nomor aktif di seluruh wilayah Indonesia.",
+    },
+  ];
 
   return (
     <>

@@ -1,6 +1,9 @@
 import Banner from "@/components/Banner";
 import BannerImgSlider from "@/components/BannerImgSlider/BannerImgSlider";
-import H2Title from "@/components/h2Title";
+import BantuanIndihome from "@/components/BantuanIndihome";
+import CardContainer from "@/components/CardContainer";
+import H3Title from "@/components/h3Title";
+import LanggananSekarang from "@/components/LanggananSekarang";
 import InternetPromo from "@/components/ListHarga/InternetPromo";
 import MapImage from "@/components/MapsImg/MapImage";
 import Head from "next/head";
@@ -200,15 +203,18 @@ function Cikupa() {
             description={cikupa.description}
             h2Title={cikupa.h2Title}
           />
-          <H2Title title={cikupa.title} path={cikupa.path} />
+          <H3Title title={cikupa.title} path={cikupa.path} />
           <InternetPromo
             title={cikupa.title}
             path={cikupa.path}
             onClick={cikupa.onClick}
             buttonLabel={cikupa.buttonLabel}
           />
-          <MapImage />
+          <CardContainer />
+          <LanggananSekarang title={cikupa.title} />
+          <MapImage title={cikupa.title} />
           <BannerImgSlider />
+          <BantuanIndihome title={cikupa.title} />
         </>
       )}
     </>

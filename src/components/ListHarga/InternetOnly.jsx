@@ -49,9 +49,9 @@ const InternetJitu = () => {
         ) : (
           <>
             <div className="border-t-2 border-slate-300 my-8">
-              <h3 className="font-bold text-2xl sm:text-3xl sm:mt-5 mt-3 text-rose-600">
+              <h4 className="font-bold text-2xl sm:text-3xl sm:mt-5 mt-3 text-rose-600">
                 Paket 1P (internet)
-              </h3>
+              </h4>
             </div>
           </>
         )}

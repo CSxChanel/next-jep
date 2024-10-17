@@ -43,9 +43,9 @@ const InetTvPhone = () => {
     <div className="my-5 mr-5">
       <div className="mt-16 w-full mx-auto text-center">
         <div className="border-t-2 border-slate-300 my-8">
-          <h3 className="font-bold mt-3 sm:text-3xl sm:mt-5 text-2xl text-rose-600">
+          <h4 className="font-bold mt-3 sm:text-3xl sm:mt-5 text-2xl text-rose-600">
             Paket 3P (internet + Tv + Phone)
-          </h3>
+          </h4>
         </div>
       </div>
       {loading ? (
