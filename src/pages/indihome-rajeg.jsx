@@ -29,9 +29,9 @@ function Rajeg() {
     },
   };
 
-  const pageUrl = `https://indihome-bytelkomsel.com/${rajeg.path}`;
+  const pageUrl = `https://indihome-by-telkomsel.com/${rajeg.path}`;
 
-  const ogImage = "https://indihome-bytelkomsel.com/image1.png";
+  const ogImage = "https://indihome-by-telkomsel.com/image1.png";
 
   //metadat schema produk
   const structuredData = {

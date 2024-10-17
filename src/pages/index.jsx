@@ -36,8 +36,8 @@ export default function Home() {
       "Solusi Internet Cepat, Berkelas, dan Cerdas untuk Aktifitas Tanpa Batas",
   };
 
-  const pageUrl = "https://indihome-bytelkomsel.com";
-  const ogImage = "https://indihome-bytelkomsel.com/paketMovie.png";
+  const pageUrl = "https://indihome-by-telkomsel.com";
+  const ogImage = "https://indihome-by-telkomsel.com/paketMovie.png";
   //metadat schema produk
   const structuredData = {
     "@context": "https://schema.org",

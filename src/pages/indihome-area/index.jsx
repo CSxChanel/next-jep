@@ -129,8 +129,8 @@ const IndihomeAreaList = () => {
     },
   ];
 
-  const pageUrl = "https://indihome-bytelkomsel.com/indihome-by-telkomsel";
-  const ogImage = "https://indihome-bytelkomsel.com/paketMovie.png";
+  const pageUrl = "https://indihome-by-telkomsel.com/indihome-by-telkomsel";
+  const ogImage = "https://indihome-by-telkomsel.com/paketMovie.png";
 
   //metadat schema produk
   const [loading, setLoading] = useState(true);

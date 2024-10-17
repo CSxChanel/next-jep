@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.indihome-area.com
+Host: https://indihome-by-telkomsel.com
 
 # Sitemaps
-Sitemap: https://www.indihome-area.com/sitemap.xml
+Sitemap: https://indihome-by-telkomsel.com/sitemap.xml

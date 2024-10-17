@@ -28,9 +28,9 @@ function Balaraja() {
     },
   };
 
-  const pageUrl = `https://indihome-bytelkomsel.com/${balaraja.path}`;
+  const pageUrl = `https://indihome-by-telkomsel.com/${balaraja.path}`;
 
-  const ogImage = "https://indihome-bytelkomsel.com/image1.png";
+  const ogImage = "https://indihome-by-telkomsel.com/image1.png";
 
   //metadat schema produk
   const structuredData = {

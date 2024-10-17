@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import { PulseLoader } from "react-spinners";
 
 const ProdukIndihome = () => {
-  const pageUrl = "https://indihome-bytelkomsel.com/produk-indihome";
-  const ogImage = "https://indihome-bytelkomsel.com/paketMovie.png";
+  const pageUrl = "https://indihome-by-telkomsel.com/produk-indihome";
+  const ogImage = "https://indihome-by-telkomsel.com/paketMovie.png";
 
   const [loading, setLoading] = useState(true);
 

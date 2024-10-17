@@ -29,9 +29,9 @@ function Tigaraksa() {
     },
   };
 
-  const pageUrl = `https://indihome-bytelkomsel.com/${tigaraksa.path}`;
+  const pageUrl = `https://indihome-by-telkomsel.com/${tigaraksa.path}`;
 
-  const ogImage = "https://indihome-bytelkomsel.com/image1.png";
+  const ogImage = "https://indihome-by-telkomsel.com/image1.png";
 
   //metadat schema produk
   const structuredData = {

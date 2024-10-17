@@ -27,9 +27,9 @@ function Cikupa() {
     },
   };
 
-  const pageUrl = `https://indihome-area.com/${cikupa.path}`;
+  const pageUrl = `https://indihome-by-telkomsel.com/${cikupa.path}`;
 
-  const ogImage = "https://indihome-area.com/image1.png";
+  const ogImage = "https://indihome-by-telkomsel.com/image1.png";
 
   //metadat schema produk
   const structuredData = {

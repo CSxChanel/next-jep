@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import { PulseLoader } from "react-spinners";
 
 const PromoIndihome = () => {
-  const pageUrl = "https://indihome-bytelkomsel.com/promo-indihome";
-  const ogImage = "https://indihome-bytelkomsel.com/promo.png";
+  const pageUrl = "https://indihome-by-telkomsel.com/promo-indihome";
+  const ogImage = "https://indihome-by-telkomsel.com/promo.png";
   const promo = {
     path: "promo-indihome",
     title: "IndiHome by Telkomsel",

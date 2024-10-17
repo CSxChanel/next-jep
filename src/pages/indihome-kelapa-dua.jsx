@@ -29,9 +29,9 @@ function KelapaDua() {
     },
   };
 
-  const pageUrl = `https://indihome-bytelkomsel.com/${kelapadua.path}`;
+  const pageUrl = `https://indihome-by-telkomsel.com/${kelapadua.path}`;
 
-  const ogImage = "https://indihome-bytelkomsel.com/image1.png";
+  const ogImage = "https://indihome-by-telkomsel.com/image1.png";
   //metadat schema produk
   const structuredData = {
     "@context": "https://schema.org",

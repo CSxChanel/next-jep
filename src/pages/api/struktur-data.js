@@ -1,6 +1,6 @@
 export default function handler(req, res) {
-  const pageUrl = "https://www.indihome-bytelkomsel.com";
-  const ogImage = "https://www.indihome-bytelkomsel.com/paketMovie.png";
+  const pageUrl = "https://indihome-by-telkomsel.com";
+  const ogImage = "https://indihome-by-telkomsel.com/paketMovie.png";
 
   const structuredData = {
     "@context": "https://schema.org",
