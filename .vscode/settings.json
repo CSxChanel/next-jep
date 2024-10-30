@@ -2,5 +2,14 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
-  }
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.autohide": true,
+  "editor.fontSize": 12,
+  "notebook.formatOnSave.enabled": true,
+  "interactiveWindow.promptToSaveOnClose": true,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "prettier.tabWidth": 4
 }

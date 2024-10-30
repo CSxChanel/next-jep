@@ -50,29 +50,29 @@ const LanggananSekarang = ({ title }) => {
         </main>
       </div>
       <section className="container mb-10 sm:mb-20">
-        <h5 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-5 text-rose-600">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-5 text-rose-600">
           Langganan {title} Sekarang
-        </h5>
+        </h2>
         <p className="font-semibold text-md sm:text-xl p-3 sm:px-8">
           Dengan {title}, Anda dapat menikmati layanan internet berkualitas
           terbaik di seluruh Indonesia dengan harga yang lebih murah dan
           terjangkau seperti {title}. Langganan IndiHome Sekarang dan nikmati
           pengalaman digital terbaik di rumah Anda.
         </p>
-        <div className="gap-y-3">
-          <p className="flex items-center">
+        <div className="gap-y-5 text-xl text-rose-600">
+          <p className="flex gap-x-4 items-center">
             <MdAddTask />
             Kuota tanpa batas
           </p>
-          <p>
+          <p className="flex gap-x-4 items-center">
             <MdAddTask />
             Bebas atur langganan sesuiai anggaran
           </p>
-          <p>
+          <p className="flex gap-x-4 items-center">
             <MdAddTask />
             Bebas biaya langganan beragam aplikasi
           </p>
-          <p>
+          <p className="flex gap-x-4 items-center">
             <MdAddTask />
             Layanan pelanggan 24/jam
           </p>
@@ -81,5 +81,5 @@ const LanggananSekarang = ({ title }) => {
     </>
   );
 };
-
+  
 export default LanggananSekarang;
