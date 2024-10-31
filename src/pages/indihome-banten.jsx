@@ -27,9 +27,6 @@ function Banten() {
         onClick: () => {
             router.push("/produk-indihome");
         },
-        titleLink: () => {
-            router.push("/indihome-area");
-        },
     };
 
     const pageUrl = `https://indihome-by-telkomsel.com/${banten.path}`;
@@ -219,7 +216,7 @@ function Banten() {
                     <MapImage title={banten.title} />
                     <BannerImgSlider />
                     <BantuanIndihome title={banten.title} />
-                    <Qne title={banten.title} titleLink={banten.titleLink} />
+                    <Qne title={banten.title} titleLink="/indihome-area" />
                 </>
             )}
         </>

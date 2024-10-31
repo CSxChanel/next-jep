@@ -1,8 +1,7 @@
-//src/components/ListHarga
 import React, { useState, useEffect } from "react";
 import { PulseLoader } from "react-spinners";
-import BoxList from "./BoxList.jsx";
 import { InternetOnly, InternetTv, InternetTvPhone } from "@/services/Datas.js";
+import BoxAllProduk from "./BoxAllProduk.jsx";
 
 const SemuaHarga = () => {
     const allPackages = [...InternetOnly, ...InternetTv, ...InternetTvPhone];
@@ -17,14 +16,14 @@ const SemuaHarga = () => {
     }, []);
 
     return (
-        <div className="my-5 container">
+        <div className="container my-5">
             <div className="mt-16 w-full mx-auto text-center">
                 <h1 className="font-bold text-2xl sm:text-3xl">
                     Pilihan Paket IndiHome
                 </h1>
                 <div className="border-t-2 border-slate-500 my-8">
                     <h1 className="font-bold mt-3 sm:mt-5 sm:text-3xl text-2xl text-rose-600">
-                        IndiHome by-Telkomsel
+                        indiHome by-Telkomsel
                     </h1>
                     <p className="text-md sm:text-xl font-semibold p-3 sm:px-8">
                         IndiHome menghadirkan berbagai paket promo menarik untuk
@@ -42,9 +41,9 @@ const SemuaHarga = () => {
                     <PulseLoader color="#e11d48" size={15} />
                 </div>
             ) : (
-                <div className="grig md:grid-cols-3 md:gap-3 md:space-x-0">
+                <div className="sm:grid sm:grid-cols-2 gap-3">
                     {allPackages.map((pkg) => (
-                        <BoxList
+                        <BoxAllProduk
                             key={pkg.id}
                             mbps={pkg.mbps}
                             type={pkg.type}

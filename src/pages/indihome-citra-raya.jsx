@@ -28,9 +28,6 @@ function CitraRaya() {
         onClick: () => {
             router.push("/produk-indihome");
         },
-        titleLink: () => {
-            router.push("/indihome-area");
-        },
     };
 
     const pageUrl = `https://indihome-by-telkomsel.com/${citraraya.path}`;
@@ -227,10 +224,7 @@ function CitraRaya() {
                     <MapImage title={citraraya.title} />
                     <BannerImgSlider />
                     <BantuanIndihome title={citraraya.title} />
-                    <Qne
-                        title={citraraya.title}
-                        titleLink={citraraya.titleLink}
-                    />
+                    <Qne title={citraraya.title} titleLink="/indihome-area" />
                 </>
             )}
         </>

@@ -28,9 +28,6 @@ function PasarKemis() {
         onClick: () => {
             router.push("/produk-indihome");
         },
-        titleLink: () => {
-            router.push("/indihome-area");
-        },
     };
 
     const pageUrl = `https://indihome-by-telkomsel.com/${pasarkemis.path}`;
@@ -227,10 +224,7 @@ function PasarKemis() {
                     <MapImage title={pasarkemis.title} />
                     <BannerImgSlider />
                     <BantuanIndihome title={pasarkemis.title} />
-                    <Qne
-                        title={pasarkemis.title}
-                        titleLink={pasarkemis.titleLink}
-                    />
+                    <Qne title={pasarkemis.title} titleLink="/indihome-area" />
                 </>
             )}
         </>

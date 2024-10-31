@@ -26,9 +26,6 @@ function Cikupa() {
         onClick: () => {
             router.push("/produk-indihome");
         },
-        titleLink: () => {
-            router.push("/indihome-area");
-        },
     };
 
     const pageUrl = `https://indihome-by-telkomsel.com/${cikupa.path}`;
@@ -219,7 +216,7 @@ function Cikupa() {
                     <MapImage title={cikupa.title} />
                     <BannerImgSlider />
                     <BantuanIndihome title={cikupa.title} />
-                    <Qne title={cikupa.title} titleLink={cikupa.titleLink} />
+                    <Qne title={cikupa.title} titleLink="/indihome-area" />
                 </>
             )}
         </>

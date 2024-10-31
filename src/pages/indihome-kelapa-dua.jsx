@@ -28,9 +28,6 @@ function KelapaDua() {
         onClick: () => {
             router.push("/produk-indihome");
         },
-        titleLink: () => {
-            router.push("/indihome-area");
-        },
     };
 
     const pageUrl = `https://indihome-by-telkomsel.com/${kelapadua.path}`;
@@ -226,10 +223,7 @@ function KelapaDua() {
                     <MapImage title={kelapadua.title} />
                     <BannerImgSlider />
                     <BantuanIndihome title={kelapadua.title} />
-                    <Qne
-                        title={kelapadua.title}
-                        titleLink={kelapadua.titleLink}
-                    />
+                    <Qne title={kelapadua.title} titleLink="/indihome-area" />
                 </>
             )}
         </>

@@ -28,9 +28,6 @@ function Curug() {
         onClick: () => {
             router.push("/produk-indihome");
         },
-        titleLink: () => {
-            router.push("/indihome-area");
-        },
     };
 
     const pageUrl = `https://indihome-by-telkomsel.com/${curug.path}`;
@@ -221,7 +218,7 @@ function Curug() {
                     <MapImage title={curug.title} />
                     <BannerImgSlider />
                     <BantuanIndihome title={curug.title} />
-                    <Qne title={curug.title} titleLink={curug.titleLink} />
+                    <Qne title={curug.title} titleLink="/indihome-area" />
                 </>
             )}
         </>

@@ -27,9 +27,6 @@ function Balaraja() {
         onClick: () => {
             router.push("/produk-indihome");
         },
-        titleLink: () => {
-            router.push("/indihome-area");
-        },
     };
 
     const pageUrl = `https://indihome-by-telkomsel.com/${balaraja.path}`;
@@ -226,10 +223,7 @@ function Balaraja() {
                     <MapImage title={balaraja.title} />
                     <BannerImgSlider />
                     <BantuanIndihome title={balaraja.title} />
-                    <Qne
-                        title={balaraja.title}
-                        titleLink={balaraja.titleLink}
-                    />
+                    <Qne title={balaraja.title} titleLink="/indihome-area" />
                 </>
             )}
         </>

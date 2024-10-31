@@ -36,9 +36,6 @@ export default function Home() {
         description:
             "indihome by-Telkomsel menawarkan layanan internet Bebas akses internet stabil, telepon rumah jernih dan tayangan Tv interaktif terpopuler dengan indiHome. Miliki layanan internet terbaik di rumah sekarang juga.",
         conten: "Solusi Internet Cepat, Berkelas, dan Cerdas untuk Aktifitas Tanpa Batas",
-        titleLink: () => {
-            router.push("/index");
-        },
     };
 
     const pageUrl = "https://indihome-by-telkomsel.com";
@@ -220,7 +217,10 @@ export default function Home() {
                     <MapImage title={area.title} />
                     <BannerImgSlider />
                     <BantuanIndihome title={area.title} />
-                    <Qne title={area.title} titleLink={area.titleLink} />
+                    <Qne
+                        title={area.title}
+                        titleLink="https://indihome-area.com"
+                    />
                 </>
             )}
         </>

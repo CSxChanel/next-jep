@@ -28,9 +28,6 @@ function Rajeg() {
         onClick: () => {
             router.push("/produk-indihome");
         },
-        titleLink: () => {
-            router.push("/indihome-area");
-        },
     };
 
     const pageUrl = `https://indihome-by-telkomsel.com/${rajeg.path}`;
@@ -221,7 +218,7 @@ function Rajeg() {
                     <MapImage title={rajeg.title} />
                     <BannerImgSlider />
                     <BantuanIndihome title={rajeg.title} />
-                    <Qne title={rajeg.title} titleLink={rajeg.titleLink} />
+                    <Qne title={rajeg.title} titleLink="/indihome-area" />
                 </>
             )}
         </>

@@ -28,9 +28,6 @@ function Legok() {
         onClick: () => {
             router.push("/produk-indihome");
         },
-        titleLink: () => {
-            router.push("/indihome-area");
-        },
     };
 
     const pageUrl = `https://indihome-by-telkomsel.com/${legok.path}`;
@@ -220,7 +217,7 @@ function Legok() {
                     <MapImage title={legok.title} />
                     <BannerImgSlider />
                     <BantuanIndihome title={legok.title} />
-                    <Qne title={legok.title} titleLink={legok.titleLink} />
+                    <Qne title={legok.title} titleLink="/indihome-area" />
                 </>
             )}
         </>

@@ -28,9 +28,6 @@ function Tigaraksa() {
         onClick: () => {
             router.push("/produk-indihome");
         },
-        titleLink: () => {
-            router.push("/indihome-area");
-        },
     };
 
     const pageUrl = `https://indihome-by-telkomsel.com/${tigaraksa.path}`;
@@ -227,10 +224,7 @@ function Tigaraksa() {
                     <MapImage title={tigaraksa.title} />
                     <BannerImgSlider />
                     <BantuanIndihome title={tigaraksa.title} />
-                    <Qne
-                        title={tigaraksa.title}
-                        titleLink={tigaraksa.titleLink}
-                    />
+                    <Qne title={tigaraksa.title} titleLink="/indihome-area" />
                 </>
             )}
         </>
