@@ -169,6 +169,9 @@ export default function Home() {
     return (
         <>
             <Head>
+                <link rel="manifest" href="/manifest.json" />
+                <meta name="theme-color" content="#007bff" />
+                <link rel="apple-touch-icon" href="/logo-192.png" />
                 <title>{area.pageTitle}</title>
                 <meta name="description" content={area.description} />
                 <link rel="canonical" href={pageUrl} />
