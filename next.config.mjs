@@ -6,10 +6,11 @@ const nextConfig = {
 };
 
 export default withPWA({
-  ...nextConfig, // Gabungkan dengan konfigurasi utama
+  ...nextConfig,
   pwa: {
     dest: "public",
     register: true,
     skipWaiting: true,
+    disable: process.env.NODE_ENV === "development", // Disable saat dev
   },
 });
